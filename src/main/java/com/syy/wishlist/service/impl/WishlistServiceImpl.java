@@ -1,15 +1,15 @@
-package com.syy.wishlist.service;
+package com.syy.wishlist.service.impl;
 
 import com.syy.wishlist.model.Wishlist;
 import com.syy.wishlist.repository.WishlistRepository;
+import com.syy.wishlist.service.WishlistService;
+import java.util.List;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
-
 @Service
-public class WishlistServiceImpl implements WishlistService{
+public class WishlistServiceImpl implements WishlistService {
     @Autowired
     private WishlistRepository wishlistRepository;
 
